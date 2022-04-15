@@ -5,6 +5,7 @@
   --primery-white-color: #ffffff;
   --primery-section-color: #2f303a;
   --pramary-bacground-color: #e5e5e5;
+  --promary-contact-color: #ffffff99;
 }
 ul {
   list-style: none;
@@ -18,10 +19,11 @@ body {
   background-color: var(--pramary-bacground-color);
 }
 .contacts {
+  text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16px;
-  color: var(--primery-section-color);
+  line-height: 16;
+  color: var(--pramary-text-color);
 }
 .contacts:hover {
   color: var(--accent-color);
@@ -34,16 +36,18 @@ body {
   background-color: var(--primery-white-color);
 }
 .page-header .logo {
+  text-decoration: none;
   font-family: Raleway, sans-serif;
   font-style: Bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 31;
   color: var(--title-text-color);
 }
 .page-header .page-link {
+  text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 16;
   color: var(--title-text-color);
 }
 .page-header .page-link:hover {
@@ -51,18 +55,23 @@ body {
 }
 /* Ефективное решение */
 .effective-solutions {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60;
+  text-transform: lowercase;
   background-color: var(--primery-section-color);
 }
 .effective-solutions .effective-title {
   font-size: 44px;
   font-weight: 900;
-  line-height: 60px;
+  line-height: 60;
   color: var(--primery-white-color);
 }
 .effective-solutions .effective-buttons {
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 30;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--primery-white-color);
@@ -72,49 +81,52 @@ body {
 .peculiarities-title {
   font-size: 14px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 16;
+  text-transform: lowercase;
   color: var(--title-text-color);
 }
 .peculiarities .peculiarities-text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 24;
 }
 /* чем занимаються */
 .work .work-title {
   font-size: 36px;
   font-weight: 700;
-  line-height: 42px;
+  line-height: 42;
   color: var(--title-text-color);
 }
 /* наша команда */
 .team .team-title {
   font-size: 16px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 19;
   color: var(--title-text-color);
 }
 .team .team-text {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 19;
 }
 /* Портфолио навигация */
 .navigation .navigation-button {
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 16;
+  letter-spacing: 0.03em;
 }
+
 /* Портфолио */
 .portfolio .portfolio-title {
   font-size: 18px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 36;
   color: var(--title-text-color);
 }
 .portfolio .portfolio-text {
   font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 30;
   color: var(--pramary-text-color);
 }
 /* Подвал */
@@ -122,16 +134,27 @@ body {
   background-color: var(--primery-section-color);
 }
 .footer .logo {
+  text-decoration: none;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
-  line-height: 31px;
-  color: var(--title-text-color);
+  line-height: 31;
+  color: var(--primery-white-color);
 }
 .footer .address {
+  font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 24;
   color: var(--primery-white-color);
+}
+.footer .footer-contacts {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24;
+  color: var(--promary-contact-color);
+}
+.footer .footer-contacts:hover {
+  color: var(--accent-color);
 }
 span {
   color: var(--accent-color);
