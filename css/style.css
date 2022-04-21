@@ -28,17 +28,24 @@ ul {
 
 .container {
   outline: 2px solid tomato;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1200px;
 }
 .contacts {
-  margin-top: 0;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  display: flex;
+  margin-left: auto;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   color: var(--pramary-text-color);
+}
+.contacts + .contacts {
+  margin-left: 50px;
 }
 .contacts:hover {
   color: var(--accent-color);
@@ -47,12 +54,28 @@ ul {
   color: var(--accent-color);
 }
 /* header */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-nav {
+  margin: 0;
+  padding: 0;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  display: flex;
+  text-align: center;
+}
+.page-nav .item + .item {
+  margin-left: 50px;
+}
 .page-header {
   background-color: var(--primery-white-color);
 }
 .page-header .logo {
-  margin-top: 0;
-  margin-bottom: 32px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
 
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -60,9 +83,13 @@ ul {
   line-height: 1.19;
   color: var(--title-text-color);
 }
+
 .page-header .page-link {
-  margin-top: 0;
-  margin-bottom: 32px;
+  margin: 0;
+  margin-left: 93px;
+
+  /* padding-top: 21px;
+  padding-bottom: 21px; */
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -135,6 +162,16 @@ ul {
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
+}
+.peculiarities-list {
+  padding-left: 215px;
+  padding-right: 215px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.peculiarities-list .item {
+  width: 270px;
 }
 /* чем занимаються */
 .photo {
