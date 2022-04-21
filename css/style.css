@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 :root {
   --pramary-text-color: #757575;
   --title-text-color: #212121;
@@ -14,11 +22,18 @@ body {
   color: var(--pramary-text-color);
   background-color: var(--pramary-bacground-color);
 }
-
 ul {
   list-style: none;
 }
+
+.container {
+  outline: 2px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
 .contacts {
+  margin-top: 0;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -36,6 +51,9 @@ ul {
   background-color: var(--primery-white-color);
 }
 .page-header .logo {
+  margin-top: 0;
+  margin-bottom: 32px;
+
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -43,6 +61,8 @@ ul {
   color: var(--title-text-color);
 }
 .page-header .page-link {
+  margin-top: 0;
+  margin-bottom: 32px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -51,10 +71,12 @@ ul {
 }
 .page-header .page-link:hover {
   color: var(--accent-color);
+  list-style: none;
 }
 /* Ефективное решение */
 .effective-solutions {
   text-decoration: none;
+  text-align: center;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -62,7 +84,11 @@ ul {
   background-color: var(--primery-section-color);
 }
 .effective-solutions .effective-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
   text-decoration: none;
+  padding-top: 200px;
+
   text-transform: uppercase;
   font-size: 44px;
   font-weight: 900;
@@ -70,6 +96,7 @@ ul {
   color: var(--primery-white-color);
 }
 .effective-solutions .effective-buttons {
+  width: 200px;
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -77,11 +104,24 @@ ul {
   letter-spacing: 0.06em;
   cursor: pointer;
   text-decoration: none;
+  margin-bottom: 200px;
   color: var(--primery-white-color);
   background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 4px;
+}
+.effective-solutions,
+.peculiarities,
+.work,
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* Особености */
+
 .peculiarities-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -90,12 +130,22 @@ ul {
   color: var(--title-text-color);
 }
 .peculiarities .peculiarities-text {
+  margin-top: 0;
+  margin-bottom: 0px;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
 }
 /* чем занимаються */
+.photo {
+  display: flex;
+  padding-left: 0;
+  padding-right: 30px;
+}
+
 .work .work-title {
+  text-align: center;
+  margin-bottom: 50px;
   text-decoration: none;
   font-size: 36px;
   font-weight: 700;
@@ -104,6 +154,7 @@ ul {
 }
 /* наша команда */
 .team .team-title {
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
